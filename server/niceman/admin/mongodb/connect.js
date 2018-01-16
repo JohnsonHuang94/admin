@@ -6,7 +6,7 @@ var client = new mongodb.Db('mydatabase', server, {w: 1});
 // console.log(ObjectID)
 var _id = ObjectID('5971efaf733c9849afb42b54');
 // console.log(_id)
-client.open(function(err){
+client.openUri(function(err){
 	if (err) throw err;
 	client.collection('test_insert', function(err, collection){
 		if (err) throw err;

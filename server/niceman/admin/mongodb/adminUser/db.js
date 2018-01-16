@@ -1,6 +1,6 @@
 var mongoose = require("mongoose");
 var url = 'mongodb://localhost/adminUser'
-mongoose.connect(url);
+mongoose.connect(url,{useMongoClient:true});
 // success
 mongoose.connection.on("connected",function(){
 	console.log("connected to "+url)
