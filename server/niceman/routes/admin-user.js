@@ -71,7 +71,7 @@ router.post('/login',function(req,res){
 	
 })
 
-router.get('/api/info',function(req,res){
+router.get('/info',function(req,res){
 	res.send('aaa')
 })
 
